@@ -11,10 +11,10 @@ package co.edu.udea.edatos.laboratorio1.modelo;
  */
 public class Material {
     
-    private int ISBN;
+    private String ISBN;
     private String titulo;
     private String autor;
-    private int anio;
+    private String anio;
     private boolean disponible;
     private String idioma;
     private String pais;
@@ -25,7 +25,7 @@ public class Material {
     public Material() {
     }
 
-    public Material(int ISBN, String titulo, String autor, int anio, boolean disponible, String idioma, String pais, String categoria, String editorial, int diasPrestamo) {
+    public Material(String ISBN, String titulo, String autor, String anio, boolean disponible, String idioma, String pais, String categoria, String editorial, int diasPrestamo) {
         this.ISBN = ISBN;
         this.titulo = titulo;
         this.autor = autor;
@@ -38,11 +38,11 @@ public class Material {
         this.diasPrestamo = diasPrestamo;
     }
 
-    public int getISBN() {
+    public String getISBN() {
         return ISBN;
     }
 
-    public void setISBN(int ISBN) {
+    public void setISBN(String ISBN) {
         this.ISBN = ISBN;
     }
 
@@ -62,11 +62,11 @@ public class Material {
         this.autor = autor;
     }
 
-    public int getAnio() {
+    public String getAnio() {
         return anio;
     }
 
-    public void setAnio(int anio) {
+    public void setAnio(String anio) {
         this.anio = anio;
     }
 
