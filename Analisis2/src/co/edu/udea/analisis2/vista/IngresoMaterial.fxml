@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.udea.analisis2.controlador.IngresoMaterialControlador">
+   <children>
+      <Label layoutX="146.0" layoutY="25.0" text="Ingrese los Datos del Nuevo Material">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="156.0" layoutY="77.0" text="ISBN" />
+      <TextField fx:id="txtISBN" layoutX="296.0" layoutY="73.0" />
+      <Label layoutX="156.0" layoutY="110.0" text="Titulo" />
+      <TextField fx:id="txtTitulo" layoutX="296.0" layoutY="106.0" />
+      <Label layoutX="156.0" layoutY="143.0" text="Autor" />
+      <TextField fx:id="txtAutor" layoutX="296.0" layoutY="139.0" />
+      <Label layoutX="156.0" layoutY="176.0" text="Año" />
+      <TextField fx:id="txtAnio" layoutX="296.0" layoutY="172.0" />
+      <Label layoutX="156.0" layoutY="215.0" text="Idioma" />
+      <TextField fx:id="txtIdioma" layoutX="296.0" layoutY="211.0" />
+      <Label layoutX="154.0" layoutY="258.0" text="Pais" />
+      <TextField fx:id="txtPais" layoutX="296.0" layoutY="254.0" />
+      <Label layoutX="152.0" layoutY="293.0" text="Categoria" />
+      <TextField fx:id="txtCategoria" layoutX="296.0" layoutY="289.0" />
+      <Label layoutX="154.0" layoutY="326.0" text="Editorial" />
+      <TextField fx:id="txtEditorial" layoutX="296.0" layoutY="322.0" />
+      <Label layoutX="154.0" layoutY="364.0" text="Días de prestamo" />
+      <TextField fx:id="txtDiasPres" layoutX="296.0" layoutY="360.0" />
+      <Button fx:id="btnAgregar" layoutX="157.0" layoutY="415.0" mnemonicParsing="false" onAction="#DoAgregar" prefHeight="25.0" prefWidth="110.0" text="Agregar" />
+      <Button fx:id="btnCancealr" layoutX="333.0" layoutY="415.0" mnemonicParsing="false" onAction="#DoCancelar" prefHeight="25.0" prefWidth="110.0" text="Cancelar" />
+   </children>
+</AnchorPane>

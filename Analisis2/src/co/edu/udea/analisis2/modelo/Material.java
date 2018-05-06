@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.edu.udea.edatos.laboratorio1.modelo;
+package co.edu.udea.analisis2.modelo;
 
 /**
  *
  * @author Telecentro
  */
 public class Material {
-    
+
     private String ISBN;
     private String titulo;
     private String autor;
@@ -25,12 +25,12 @@ public class Material {
     public Material() {
     }
 
-    public Material(String ISBN, String titulo, String autor, String anio, boolean disponible, String idioma, String pais, String categoria, String editorial, int diasPrestamo) {
+    public Material(String ISBN, String titulo, String autor, String anio, String idioma, String pais, String categoria, String editorial, int diasPrestamo) {
         this.ISBN = ISBN;
         this.titulo = titulo;
         this.autor = autor;
         this.anio = anio;
-        this.disponible = disponible;
+        disponible = true;
         this.idioma = idioma;
         this.pais = pais;
         this.categoria = categoria;
@@ -123,5 +123,4 @@ public class Material {
         return "Material{" + "ISBN=" + ISBN + ", titulo=" + titulo + ", autor=" + autor + ", anio=" + anio + ", disponible=" + disponible + ", idioma=" + idioma + ", pais=" + pais + ", categoria=" + categoria + ", editorial=" + editorial + ", diasPrestamo=" + diasPrestamo + '}';
     }
 
-    
 }

@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.edu.udea.edatos.laboratorio1.modelo.dao;
+package co.edu.udea.analisis2.modelo.dao;
 
-import co.edu.udea.edatos.laboratorio1.modelo.Material;
+import co.edu.udea.analisis2.modelo.Material;
 import java.util.List;
 
 /**

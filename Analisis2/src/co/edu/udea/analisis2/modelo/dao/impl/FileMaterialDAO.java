@@ -1,7 +1,7 @@
-package co.edu.udea.edatos.laboratorio1.modelo.dao.impl;
+package co.edu.udea.analisis2.modelo.dao.impl;
 
-import co.edu.udea.edatos.laboratorio1.modelo.Material;
-import co.edu.udea.edatos.laboratorio1.modelo.dao.MaterialDAO;
+import co.edu.udea.analisis2.modelo.Material;
+import co.edu.udea.analisis2.modelo.dao.MaterialDAO;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
@@ -101,7 +101,7 @@ public class FileMaterialDAO implements MaterialDAO {
     private String parseMaterialString(Material material) {
         StringBuilder registro = new StringBuilder();
         registro.append(rellenarCampo(material.getISBN(), ISBN_LONGITUD));
-        registro.append(rellenarCampo(material.getAutor(), TITULO_LONGITUD));
+        registro.append(rellenarCampo(material.getTitulo(), TITULO_LONGITUD));
         registro.append(rellenarCampo(material.getAutor(), AUTOR_LONGITUD));
         registro.append(rellenarCampo(material.getAnio(), ANIO_LONGITUD));
         registro.append(rellenarCampo(String.valueOf(material.isDisponible()), DISPONIBILIDAD_LONGITUD));

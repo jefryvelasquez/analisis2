@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.edu.udea.edatos.laboratorio1.modelo;
+package co.edu.udea.analisis2.modelo;
 
 import java.util.Date;
 
