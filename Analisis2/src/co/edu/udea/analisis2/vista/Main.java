@@ -6,7 +6,7 @@
 package co.edu.udea.analisis2.vista;
 
 
-import co.edu.udea.analisis2.controlador.IngresoMaterialControlador;
+import co.edu.udea.analisis2.controlador.MaterialControlador;
 import co.edu.udea.analisis2.controlador.PrincipalControlador;
 import java.io.IOException;
 import javafx.application.Application;
@@ -49,14 +49,14 @@ public class Main extends Application {
     
     public void mostrarIngresoMaterial() {
         try {
-            FXMLLoader loader = new FXMLLoader(Main.class.getResource("IngresoMaterial.fxml"));
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("Material.fxml"));
             AnchorPane ventanaDos = (AnchorPane) loader.load();
             Stage ventana = new Stage();
             ventana.setTitle("Nuevo material");
             ventana.initOwner(stagePrincipal);
             Scene scene = new Scene(ventanaDos);
             ventana.setScene(scene);
-            IngresoMaterialControlador controller = loader.getController();
+            MaterialControlador controller = loader.getController();
             controller.setStagePrincipal(ventana);
             ventana.show();
 

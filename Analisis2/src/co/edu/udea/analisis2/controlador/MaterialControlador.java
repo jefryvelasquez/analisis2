@@ -15,7 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class IngresoMaterialControlador {
+public class MaterialControlador {
 
     Material material;
     MaterialDAO materialDAO = new FileMaterialDAO();
